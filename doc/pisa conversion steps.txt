@@ -1,0 +1,41 @@
+1. #Copy css,images,js folders to the project root folder replacing all
+
+2. #Copy template folder contents to templates folder and run the following commands
+
+cd templates
+move /y pisa2025_robot_arm_template.xml RobotArm_template.js
+move /y pisa2025_transport_pod_template.xml TransportPod_template.js
+move /y pisa2025_safe_landing_template.xml SafeLanding_template.js
+move /y pisa2025_fitness_app_template.xml FitnessApp_template.js
+move /y pisa2025_conservation_template.xml Conservation_template.js
+
+
+
+3. #Copy items folder content to items folder and run the following commands
+
+cd items
+del /q /s *.js
+FOR /R %f IN (*.xml) DO REN "%f" *.js
+
+4. Using an editor such as VSC seach and replace in the items folder
+search: <?xml version="1.0"?>
+replace: const item = /*html*/`<?xml version="1.0"?>
+
+seach: </assessmentItem>
+replace: </assessmentItem>`
+
+
+5. Using an editor such as VSC seach and replace in the templates folder
+search: <?xml version="1.0" encoding="UTF-8"?>
+replace: const template = /*xml*/`<?xml version="1.0" encoding="UTF-8"?>
+
+seach: </xsl:stylesheet>
+replace: </xsl:stylesheet>`
+
+6. Search for 
+/engine/packages/PISA2025/Resources/ in js files and replace with replace ""
+/engine/packages/PISA2025/Resources/ in css files and replace with replace "../"
+
+7. Item specific fixes
+P1M202 - data-module="RobotArm" change to data-module="FitnessApp"
+

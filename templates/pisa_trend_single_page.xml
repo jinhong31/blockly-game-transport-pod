@@ -1,0 +1,65 @@
+const template = /*xml*/`<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:qti="http://www.imsglobal.org/xsd/imsqti_v2p1">
+   <xsl:template match="/qti:assessmentItem">
+      <xsl:text disable-output-escaping="yes">&lt;!DOCTYPE html></xsl:text>
+      <html lang="en-AU">
+         <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <title>
+               <xsl:value-of select="@title" />
+            </title>
+
+            <link rel="stylesheet" type="text/css" href="/engine/packages/common/resources/css/jquery-ui.css?v={$VERSION$}" />
+            <link rel="stylesheet" type="text/css" href="/engine/packages/PISA2025/Resources/css/pisa2025_trend.css?v={$VERSION$}" />
+            
+         </head>
+
+         <body class="qti pisa2025 editor-undo editor-redo clipboard track-events rescale-device-screen" data-scaling-desktop="1850" data-scaling-mobile="1500">         
+
+            <div id="view-mode" class="smode active container g-viewmode" dir="ltr">
+               <div class="g-application">
+                  <div class="g-navbar-title">
+                     <span class="g-module-title g-rtl-float-left" data-am-translate="m4.title.1" data-wysiwyg="false" data-am-translate-group="m4.title"></span>
+                     <span data-am-translate="m4.title.2" data-wysiwyg="false" data-am-translate-group="m4.title"></span>
+                  </div>
+                  <div class="g-navbar-progress">
+                     <button name="next" class="g-next g-nav-btn g-rtl-float-right" title="Next">
+                        <span data-am-translate="m4.button.1" data-wysiwyg="false" data-am-translate-group="m4.button"></span>
+                        <i class="g-rtl-img fas fa-arrow-alt-circle-right"></i>
+                     </button>
+                     <button name="prev" class="g-previous g-nav-btn g-rtl-float-right" title="Prev">
+                        <i class="g-rtl-img fas fa-arrow-alt-circle-left"></i>
+                        <span data-am-translate="m4.button.2" data-wysiwyg="false" data-am-translate-group="m4.button"></span>
+                     </button>
+                  </div>
+                  <div class="g-stimulus section default content-group active" data-id="section-stimulus" data-title="Stimulus">
+
+                    <!-- BRING IN THE ITEM CONTENT-->
+                      <!-- <article class="stimulus-area">
+                     <itemBody>
+                        <xsl:for-each select="qti:itemBody/*">
+                           <xsl:apply-templates select="." />
+                        </xsl:for-each>
+                     </itemBody>
+                    </article> -->
+
+                  <article class="stimulus-area">
+                     <itemBody>
+                        <xsl:for-each select="qti:itemBody/*">
+                           <xsl:if test="not(contains(concat(' ', @class, ' '), ' section-reference '))">
+                              <xsl:apply-templates select="."/>
+                           </xsl:if>
+                        </xsl:for-each>
+                     </itemBody>
+                  </article>
+                    
+                  </div>
+               </div>
+            </div>
+            <script type="text/javascript" src="/engine/packages/PISA2025/Resources/build/js/pisa2025.min.js?v={$VERSION$}" data-keep-original-source="false">&#160;</script>
+         </body>
+      </html>
+   </xsl:template>
+</xsl:stylesheet>`

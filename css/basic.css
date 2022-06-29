@@ -1,0 +1,229 @@
+/* Basic css */
+/* ===============spacer============= */
+.m-0 {
+    margin: 0px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-auto {
+    margin: 0px auto;
+}
+
+.mt-0 {
+    margin-top: 0px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-19 {
+    margin-top: 19px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-130 {
+    margin-top: 130px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.ml-60 {
+    margin-left: 60px;
+}
+
+.my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.p-0 {
+    padding: 0px;
+}
+
+.p-auto {
+    padding: 0px auto;
+}
+
+.pt-0 {
+    padding-top: 0px;
+}
+
+.pb-0 {
+    padding-bottom: 0px;
+}
+
+.px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+.py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* ==========font-size========== */
+.text-12 {
+    font-size: 12px;
+}
+
+.text-14 {
+    font-size: 14px;
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.text-18 {
+    font-size: 18px;
+}
+
+.text-20 {
+    font-size: 20px;
+}
+
+/* ===========font-bold========== */
+.text-bold-5 {
+    font-weight: 500;
+}
+
+.text-bold-6 {
+    font-weight: 600;
+}
+
+.text-bold-7 {
+    font-weight: 700;
+}
+
+.text-bold-8 {
+    font-weight: 800;
+}
+
+/* ========== text align ============*/
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: start;
+}
+
+.text-end {
+    text-align: end;
+}
+
+/* ============== flex ===============*/
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.jusify-between {
+    justify-content: space-between;
+}
+
+.jusify-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+
+/* ============position=========== */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* =================height and width ================ */
+.height-full {
+    height: 100%;
+}
+
+.height-75 {
+    height: 75%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+/* ======================== color ====================== */
+.text-red {
+    color: #D9320D;
+}
+
+.text-green {
+    color: #038754 !important;
+}
+
+/*====================background====================*/
+.background-white {
+    background-color: white;
+}
+
+.background-blue-transport {
+    background-color: #011993;
+}
+
+/*====================border==================*/
+.border {
+    border: 1px solid #DDDDDD;
+}
+
+.border-transparent {
+    border-color: transparent;
+}

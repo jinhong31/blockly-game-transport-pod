@@ -1,0 +1,459 @@
+/* Module specific CSS. Make sure to contain only module specific selectors. I.e prefixed with p1-m1-[rest of selector] 
+ * or nested module .p1-m1 [your override] or nested item .p1-m1-[itemid] [your override]
+*/
+.p1-m1 {
+   --highlight-target-color: #83b4da;
+   --arrow-color: #429cff;
+
+}
+
+.p1-m1-intro-img {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.p1-m1-robo-arm-img {
+   width: 100%;
+   text-align: center;
+}
+
+.p1-m1-robot-arm-img .p1-m1-world-header {
+   width: 100%;
+}
+
+.p1-m1 .g-blockly-container {
+   flex: 1 0 auto;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
+
+.p1-m1 .g-blockly {
+   flex: 1 1 auto;
+   min-width: 176px;
+}
+
+.p1-m1 .g-blockly-ws-title {
+   margin-left: 40px;
+}
+
+.p1-m1 .g-blockly-ws-title-ext {
+   margin-left: 75px;
+}
+
+.p1-m1-world-section {
+   display: flex;
+   flex-direction: row;
+   flex: 1 0 auto;
+   position: relative;
+}
+
+.p1-m1-world-panel {
+   margin-left: 20px;
+   flex: 0 0 auto;
+   align-self: flex-start;
+   position: relative;
+}
+
+[dir=rtl] .p1-m1-world-panel {
+   margin-left: 0;
+   margin-right: 20px;
+}
+
+.p1-m1-world-container {
+   position: relative;
+   display: inline-block;
+   margin: 0 20px 20px 20px;
+}
+
+.p1-m1-world-header {
+   color: #fff;
+   background-color: #000;
+   padding: 15px;
+   font-size: 18px;
+   height: 30px;
+}
+
+.p1-m1-world {
+   position: relative;
+   margin-top: -3px;
+}
+
+.p1-m1-ra-obj-ico {
+   height: 20px;
+   vertical-align: top;
+}
+
+.p1-m1 .g-target-active {
+   background-color: var(--highlight-target-color) !important;
+   fill: var(--highlight-target-color) !important;
+   color: #000 !important;
+}
+
+.p1-m1 .g-target-active.blocklyTrash {
+   filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-155deg) saturate(600%) contrast(0.8);
+}
+
+.p1-m1-info-layer {
+   position: absolute;
+   z-index: 500;
+   width: 100%;
+   height: 100%;
+}
+
+.p1-m1 .g-btn-submit {
+   position: absolute;
+   right: 0;
+   top: 0;
+   margin: 15px;
+}
+
+.p1-m1-standalone .p1-m1-world-container {
+   margin: 20px 50px 40px 50px;
+}
+
+.p1-world-btn-strip {
+   display: flex;
+   justify-content: space-between;
+   margin: 0px 10px;
+}
+
+.p1-m1-short.g-instructions {
+   width: 80%;
+}
+
+.p1-m1-full-height.g-blockly {
+   height: 590px;
+}
+
+.p1-m1-blockly-tripple-h {
+   height: 70px;
+}
+
+.g-help-dialog .p1-m1-world-container {
+   margin: 0px 5px;
+}
+
+.g-help-dialog .p1-m1-world-panel {
+   transform: scale(0.85);
+   transform-origin: top;
+   margin-left: -20px;
+   height: 460px;
+}
+
+.p1-m1 .ra-shape-bin {
+   opacity: 0.5;
+}
+
+/* RobotArm item specific styles */
+.p1-m1-01 .g-instructions {
+   padding: 30px 30px 40px 10px;
+}
+
+.p1-m1-02 .g-grid-container {
+   grid-template-columns: auto auto auto;
+}
+
+.p1-m1-04 .g-grid-container {
+   grid-template-columns: auto auto auto auto;
+}
+
+.p1-m1-04 .g-text-code-block {
+   margin-bottom: 15px;
+}
+
+.p1-m1-05 .blocklyWorkspace>g>g>g>g>g>g>g:nth-of-type(1)>g>.blocklyText {
+   opacity: 0;
+}
+
+.p1-m1-05 .g-blockly {
+   height: 270px;
+   width: 160px;
+}
+
+.p1-m1-05 .g-grid-container {
+   grid-template-columns: auto auto auto auto;
+}
+
+.p1-m1-07 .g-grid-container {
+   grid-template-columns: auto auto auto;
+}
+
+.p1-m1-07 .g-blockly {
+   margin-top: 100px;
+   height: 380px;
+   width: 100%;
+}
+
+.p1-m1-07 .g-instructions {
+   width: 100%;
+}
+
+.p1-m1-07 .g-mcg {
+   position: absolute;
+   z-index: 100;
+   margin: 50px 10px;
+}
+
+.p1-m1-07 .g-mcq-label-styled {
+   width: 266px;
+   height: 360px;
+}
+
+.p1-m1-07 .g-mcq-label {
+   grid-gap: 10px;
+}
+
+.p1-m1-07-txt-holder {
+   width: 600px;
+   align-self: flex-start;
+}
+
+.p1-m1-08 .g-flex-center-row,
+.p1-m1-27 .g-flex-center-row {
+   justify-content: center;
+}
+
+.p1-m1-10 .p1-m1-world-panel {
+   align-self: end;
+   margin-top: 50px;
+}
+
+.p1-m1-10 .p1-world-btn-strip {
+   justify-content: flex-start;
+   margin: 0;
+}
+
+.p1-m1-10 .g-btn-blockly {
+   margin: 0 10px 0 50px;
+}
+
+.p1-m1 .g-tutorial-window-card {
+   width: 400px;
+}
+
+.p1-m1 .g-tutorial-modal-text {
+   margin-inline-start: 15px;
+}
+
+#p1-m1-10-tutorial-window {
+   z-index: 30;
+}
+
+#p1-m1-14-tutorial-window {
+   z-index: 30;
+}
+
+.p1-m1-14 .p1-m1-world-section {
+   margin-top: 10px;
+}
+
+.p1-m1-14 .g-blockly-ws-title {
+   margin-left: 65px;
+}
+
+.p1-m1-21-arrow-right {
+   fill: var(--arrow-color);
+   stroke: var(--arrow-color);
+   position: absolute;
+   left: 30px;
+   top: 180px;
+   z-index: 10;
+}
+
+.p1-m1-21-arrow-left {
+   fill: var(--arrow-color);
+   stroke: var(--arrow-color);
+   position: absolute;
+   left: 30px;
+   top: 205px;
+   transform: scaleX(-1);
+   z-index: 10;
+}
+
+.p1-m1-21-txt {
+   position: absolute;
+   left: 190px;
+   top: 163px;
+   color: var(--arrow-color);
+   font-size: 25px;
+   font-weight: bold;
+   z-index: 10;
+}
+
+.p1-m1-27 .g-avatar {
+   font-size: 20px;
+}
+
+.p1-m1-27 .p1-m1-world-panel {
+   margin-right: 20px;
+   margin-bottom: 120px;
+}
+
+.p1-m1-27-image {
+   flex: 0 0 auto;
+   align-self: end;
+}
+
+.p1-m1-28 .p1-m1-world-section .ra-world {
+   width: 160px;
+   height: 320px;
+}
+
+.p1-m1-28 .p1-m1-world-section .p1-m1-world-panel {
+   margin: 0 50px;
+}
+
+.p1-m1-29 .g-mcg {
+   margin-top: 0px;
+   padding: 20px;
+}
+
+.p1-m1-33 .g-grid-container {
+   grid-template-columns: auto auto auto auto auto auto;
+}
+
+.p1-m1-33 .g-blockly {
+   height: 300px;
+   width: 400px;
+}
+
+.p1-m1-33 .g-grid-block:hover {
+   border: 4px solid #0000FF;
+   cursor: pointer;
+}
+
+.p1-m1-35 .g-grid-container {
+   grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.p1-m1-35 .g-blockly {
+   height: 215px;
+   width: 300px;
+}
+
+.p1-m1-35 .blocklyEditableText>rect {
+   fill-opacity: 1 !important;
+   stroke: #000 !important;
+   stroke-width: 2px;
+}
+
+.p1-m1-35 .g-inline-input {
+   opacity: 0;
+   position: absolute;
+}
+
+.p1-m1-37 .g-blockly-main {
+   height: 500px;
+   width: 320px;
+}
+
+.p1-m1-37 .blocklyMainBackground {
+   stroke: unset;
+}
+
+.p1-m1-37 .ra-world {
+   height: 290px;
+   width: 160px;
+}
+
+.p1-m1-37 .p1-m1-world-panel {
+   margin: 0;
+   display: inline-flex;
+   flex: 0 auto;
+}
+
+.p1-m1-37 .p1-m1-world-panel .p1-m1-world-container {
+   margin: 0;
+   transform: scale(0.7);
+   transform-origin: top;
+   height: 250px;
+   display: block;
+}
+
+.p1-m1-37 .p1-m1-world-section {
+   border-bottom: 1px solid var(--instruction-border);
+}
+
+.p1-m1-37 .g-instructions {
+   grid-template-columns: min-content auto 315px;
+}
+
+.p1-m1-37 .g-mcg {
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+
+.p1-m1-37 .g-mcg .g-mcq-label {
+   height: 180px;
+   cursor: pointer;
+}
+
+.p1-m1-37 .g-mcg .g-mcq-label-extend {
+   height: 320px;
+}
+
+.ra-world-square {
+   stroke: black;
+   fill-opacity: 1;
+   z-index: 0;
+   fill: white;
+}
+
+.ra-world-bin-square {
+   stroke: #414141;
+   fill-opacity: 1;
+   z-index: 1;
+   fill: #dcdbdb;
+}
+
+.ra-world-arm {
+   fill: #000;
+   stroke: "none";
+   z-index: 10;
+}
+
+.ra-error-container {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 100;
+   left: 0;
+   top: 0;
+   overflow: auto;
+   background-color: rgba(0, 0, 0, 0.7);
+   display: flex;
+}
+
+.ra-error-msg {
+   background-color: #fefefe;
+   border-radius: 15px;
+   margin: auto;
+   width: 90%;
+   border: 1px solid #888;
+   font-size: 18px;
+   padding: 15px 5px;
+   text-align: center;
+}
+
+@media (min-width:1305px) {
+
+   /* fix width for repeat input block*/
+   .blocklyWidgetDiv .blocklyHtmlInput:not([aria-invalid="false"]) {
+      margin-left: 8px !important;
+   }
+}
+
+.p1-m1-20 .g-lc-introduction-window {
+   top: 150px;
+   --xpos: 240px;
+}
+
+.p1-m1-21 .g-lc-introduction-window {
+   top: 220px;
+   --xpos: 200px;
+}
